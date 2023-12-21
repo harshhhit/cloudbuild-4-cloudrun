@@ -7,10 +7,9 @@ steps:
 # Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/clean-mountain-395906/testimage4']
-#   #delpoy the image
-#  -name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-#   entrypoint: 'gcloud'
-#    args: ['run',deploy','test4','--image','gcr.io/clean-mountain-395906/testimage4','--region','
-# us-central1 (Iowa)']
+   #delpoy the image
+ -name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'gcloud'
+  args: ['run', deploy', 'test4','--image', 'gcr.io/clean-mountain-395906/testimage4', '--region', 'us-central1 (Iowa)']
 
 
