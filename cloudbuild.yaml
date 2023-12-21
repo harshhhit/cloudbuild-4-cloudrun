@@ -9,7 +9,7 @@ steps:
     args: ['push', 'gcr.io/clean-mountain-395906/testimage4']
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk' 
     entrypoint: gcloud
-   args:
+    args:
       - 'run'
       - 'deploy'
       - 'test4'
