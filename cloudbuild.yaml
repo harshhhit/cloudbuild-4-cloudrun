@@ -13,5 +13,5 @@ steps:
       - 'run'
       - 'deploy'
       - 'test4'
-      - '--image=gcr.io/clean-mountain-395906/testimage4*'
+      - '--image=gcr.io/clean-mountain-395906/testimage4:latest'
       - '--region=us-central1'
