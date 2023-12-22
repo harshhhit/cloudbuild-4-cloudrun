@@ -1,0 +1,15 @@
+{
+  "name": "video-4udemy",
+  "version": "1.0.0",
+  "description": "The yamal file will create a container and deloy it on the cloudrunner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -1,7 +1,17 @@
-FROM python:3.7-slim-stretch
-RUN -m pip install --upgrade pip
-RUN pip install flask
-WORKDIR /myapp
-COPY main.py /myapp/main.py
-EXPOSE 8080
-CMD ["python","myapp/main.py"]
+
+FROM node:slim
+
+# Declaring env
+ENV NODE_ENV development
+
+# Setting up the work directory
+WORKDIR /express-docker
+
+# Copying all the files in our project
+COPY . .
+
+# Installing dependencies
+RUN npm install
+
+# Starting our application
+CMD [ "node", "index.js" ]
